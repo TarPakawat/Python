@@ -19,7 +19,7 @@ if (g != ans):
     for i in range(0,min(len(ans),len(g))):
         if g[i] == ans[i]:
             x += 1
-        if g[i] in ans and g[i] != ans:
+        elif g[i] in ans:
             o += 1
     if x != 4:
      print('%s position correct, %s digits correct' % (firstChar(conv(x)),conv(o)))
